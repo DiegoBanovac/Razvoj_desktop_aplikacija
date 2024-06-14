@@ -164,6 +164,14 @@ public class Korisnici {
         JLabel lblAgencyPassword = new JLabel("Lozinka");
         lblAgencyPassword.setBounds(482, 192, 79, 14);
         frmCloudEstate.getContentPane().add(lblAgencyPassword);
+        
+        JTextPane txtpnPromijena = new JTextPane();
+        txtpnPromijena.setText("Dobar dan!");
+        txtpnPromijena.setFont(new Font("Tw Cen MT Condensed Extra Bold", Font.PLAIN, 20));
+        txtpnPromijena.setEditable(false);
+        txtpnPromijena.setBackground(UIManager.getColor("Button.background"));
+        txtpnPromijena.setBounds(109, 473, 97, 37);
+        frmCloudEstate.getContentPane().add(txtpnPromijena);
     }
 
     private boolean validateUser(String email, String password) {
